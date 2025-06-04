@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculator;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -26,5 +27,11 @@ namespace Calculator
 		{
 			this.InitializeComponent();
 		}
+		//The click function for the currency button 
+		private void CurrencyButton_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(CurrencyPage));
+		}
+
 	}
 }
