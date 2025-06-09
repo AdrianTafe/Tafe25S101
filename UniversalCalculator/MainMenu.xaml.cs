@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculator;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,11 @@ namespace Calculator
 		public MainMenu()
 		{
 			this.InitializeComponent();
+		}
+
+		private void mortgageButton_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(MortgagePage));
 		}
 	}
 }
