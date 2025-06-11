@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="Calculator.UnitPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<Grid>
+		<StackPanel HorizontalAlignment="Center">
+			<!--Heading Stack Panel-->
+			<StackPanel HorizontalAlignment="Center">
+				<TextBlock x:Name="headingTextBlock" Text="Unit Converter" Margin="10" FontSize="50" FontWeight="Bold" />
+			</StackPanel>
+			<!--Unit chooser stack panel containing all the choices of units-->
+			<StackPanel Orientation="Horizontal">
+				<StackPanel Margin="0, 0, 100, 0">
+					<TextBlock x:Name="unitChoiceTextBlock" Text="Choose your unit:" />
+					<RadioButton x:Name="temperatureRadioButton" Content="Temperature" GroupName="unitChoice" Checked="temperatureRadioButton_Checked" />
+					<RadioButton x:Name="distanceRadioButton" Content="Distance" GroupName="unitChoice" Checked="distanceRadioButton_Checked" />
+					<RadioButton x:Name="massRadioButton" Content="Mass" GroupName="unitChoice" Checked="massRadioButton_Checked" />
+					<RadioButton x:Name="pressureRadioButton" Content="Pressure" GroupName="unitChoice" Checked="pressureRadioButton_Checked" />
+				</StackPanel>
+				<!--Choose the conversion type stack panel-->
+				<StackPanel>
+					<TextBlock x:Name="chooserTextBlock" Text="Choose your conversion type:"/>
+					<RadioButton x:Name="metricToImperialRadioButton" IsChecked="True" Content="Convert Metric unit to Imperial unit" GroupName="systemChoice" />
+					<RadioButton x:Name="imperialToMetricRadioButton" Content="Convert Imperial unit to Metric unit" GroupName="systemChoice" />
+				</StackPanel>
+			</StackPanel>
+			<!--input/output stack panel-->
+			<StackPanel Margin="0,20,0,20">
+				<TextBlock x:Name="inputTextBlock" Text="Input your unit amount to convert:" />
+				<TextBox x:Name="inputTextBox" PlaceholderText="Enter unit amount" Margin="0,10,0,0" />
+				<TextBlock x:Name="outputTextBlock" Margin="0,10,0,0" FontSize="20"/>
+			</StackPanel>
+			<!--buttons for execution and navigation-->
+			<StackPanel HorizontalAlignment="Center">
+				<Button x:Name="convertButton" Content="Convert" Margin="10" Padding="10" FontSize="30" HorizontalAlignment="Center" Click="convertButton_Click" />
+				<Button x:Name="exitButton" Content="Exit" Margin="10" Padding="10" FontSize="30" HorizontalAlignment="Center" Click="exitButton_Click" />
+			</StackPanel>
+		</StackPanel>
+	</Grid>
+</Page>
