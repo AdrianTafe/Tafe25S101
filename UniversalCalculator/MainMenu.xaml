@@ -11,7 +11,7 @@
     <Grid>
         <StackPanel HorizontalAlignment="Left" Background="#FFFFE6D2">
             <TextBlock x:Name="titleTextBlock" Text="Universal Calculator" Margin="20" Foreground="RoyalBlue" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center"/>
-			<Button x:Name="mathsButton" Content="Maths Calculator" Margin="10" HorizontalAlignment="Center" Width="180" Height="80"/>
+			<Button x:Name="mathsButton" Content="Maths Calculator" Margin="10" HorizontalAlignment="Center" Width="180" Height="80" Click="mathsButton_Click"/>
 			<Button x:Name="currencyButton" Click="CurrencyButton_Click" Content="Currency Converter" Margin="10" HorizontalAlignment="Center" Width="180" Height="80"/>
 			<Button x:Name="mortgageButton" Content="Mortgage Calculator" Margin="10" HorizontalAlignment="Center" Width="180" Height="80" Click="mortgageButton_Click"/>
             <Button x:Name="unitButton" Content="Unit Converter" Margin="10" HorizontalAlignment="Center" Width="180" Height="80" Click="unitButton_Click"/>
