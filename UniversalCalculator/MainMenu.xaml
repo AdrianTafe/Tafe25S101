@@ -15,7 +15,8 @@
 			<Button x:Name="currencyButton" Click="CurrencyButton_Click" Content="Currency Converter" Margin="10" HorizontalAlignment="Center" Width="180" Height="80"/>
 			<Button x:Name="mortgageButton" Content="Mortgage Calculator" Margin="10" HorizontalAlignment="Center" Width="180" Height="80" Click="mortgageButton_Click"/>
             <Button x:Name="unitButton" Content="Unit Converter" Margin="10" HorizontalAlignment="Center" Width="180" Height="80" Click="unitButton_Click"/>
-            <Button x:Name="exitButton" Content="Exit Button" Margin="10" HorizontalAlignment="Center" Width="180" Height="80"/>
+			<Button x:Name="tripButton" Content="Trip Calculator" Margin="10" HorizontalAlignment="Center" Width="180" Height="80" Click="tripButton_Click"/>
+			<Button x:Name="exitButton" Content="Exit Button" Margin="10" HorizontalAlignment="Center" Width="180" Height="80"/>
         </StackPanel>
 		<StackPanel HorizontalAlignment="Right">
 			<Image x:Name="abacusImage" Source="Images\abacus.PNG" Width="85" Height="64"/>
